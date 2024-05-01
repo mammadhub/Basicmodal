@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.justdiv {
+  margin: 5rem;
+  z-index: -1;
+}
+.justdiv .btn {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(38, 141, 176);
+  border: 2px solid blue;
+}
+.justdiv .btn:hover {
+  background-color: rgb(64, 164, 198);
+}
+
+.modalCountainer {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+.modalCountainer .modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 2;
+  width: 40%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 3px 3px 2px rgb(58, 52, 52);
+}
+.modalCountainer .modal .modalHead {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid gray;
+  padding: 2rem 1rem;
+}
+.modalCountainer .modal .modalHead .click {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: white;
+  border: 0;
+  font-size: 2rem;
+  color: gray;
+}
+.modalCountainer .modal .text {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid gray;
+  padding: 2rem 1rem;
+  font-size: 150%;
+}
+.modalCountainer .modal .finish {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid gray;
+  padding: 2rem 1rem;
+  justify-content: flex-end;
+  border: 0px;
+}
+.modalCountainer .modal .finish .btn2 {
+  padding: 0.5rem 1rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+.modalCountainer .modal .finish .btn2:hover {
+  background-color: rgb(211, 208, 208);
+}/*# sourceMappingURL=style.css.map */
